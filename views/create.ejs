@@ -1,0 +1,26 @@
+<%- include("partials/header") %>
+
+<div class="form-container">
+  <p class="form-text">Write your idea's here!</p>
+  <form action="/submit/blog" method="post">
+    <label for="title">Blog Title</label>
+    <input
+      type="text"
+      id="title"
+      name="title"
+      placeholder="Your Title Here"
+      required
+    />
+    <label for="description">Blog description</label>
+    <textarea
+      id="description"
+      name="description"
+      placeholder="Your Blog Description"
+      rows="6"
+      required
+    ></textarea>
+    <input type="submit" value="Post" />
+  </form>
+</div>
+
+<%- include("partials/footer") %>

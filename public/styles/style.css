@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.main {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.site-header, .site-footer {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.site-header h1, .site-footer p {
+    margin: 0;
+}
+
+.site-identity a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.site-navigation {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.site-navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.site-navigation ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.site-navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.site-navigation ul li a:hover {
+    color: #77a3c4;
+}
+.title {
+    text-align: center;
+    color: #333;
+}
+
+.form-container {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.form-container p {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form input[type="submit"] {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form input[type="submit"]:hover {
+    background: #77a3c4;
+}

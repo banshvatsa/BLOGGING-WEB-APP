@@ -1,0 +1,29 @@
+<%- include("partials/header") %>
+
+<div class="container mt-5">
+    <div class="text-center mb-4">
+        <h3>You can create your own blog here!</h3>
+        <a href="/create" class="btn btn-primary">Create New Blog</a>
+    </div>
+
+    <div class="blog-list">
+        <h2 class="mb-4">Your Blogs</h2>
+        <% if (blogs.length === 0) { %>
+            <p class="text-center">No blogs available. Create a new blog to get started!</p>
+        <% } %>
+        <% blogs.forEach(function(blog){ %>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title"><%= blog.title %></h5>
+                    <p class="card-text"><%= blog.description.substring(0,150) %>.....<a href="/blog/<%= blog.title %>">Read More</a></p>
+                    <div class="d-flex justify-content-end">
+                        <a href="/blog/edit/<%= blog.title %>" class="btn btn-primary btn-sm mr-2">Edit Blog</a>
+                        <a href="/blog/delete/<%= blog.title %>" class="btn btn-danger btn-sm">Delete Blog</a>
+                    </div>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+</div>
+
+<%- include("partials/footer") %>
